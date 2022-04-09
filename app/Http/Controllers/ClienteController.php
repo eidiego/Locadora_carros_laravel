@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreClienteRequest;
-use App\Http\Requests\UpdateClienteRequest;
 use App\Models\Cliente;
+use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
@@ -19,22 +18,12 @@ class ClienteController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreClienteRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreClienteRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -51,24 +40,13 @@ class ClienteController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Cliente  $cliente
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Cliente $cliente)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateClienteRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateClienteRequest $request, Cliente $cliente)
+    public function update(Request $request, Cliente $cliente)
     {
         //
     }

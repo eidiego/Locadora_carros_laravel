@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreLocacaoRequest;
-use App\Http\Requests\UpdateLocacaoRequest;
 use App\Models\Locacao;
+use Illuminate\Http\Request;
 
 class LocacaoController extends Controller
 {
@@ -31,10 +30,10 @@ class LocacaoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreLocacaoRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreLocacaoRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -64,11 +63,11 @@ class LocacaoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateLocacaoRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Locacao  $locacao
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateLocacaoRequest $request, Locacao $locacao)
+    public function update(Request $request, Locacao $locacao)
     {
         //
     }

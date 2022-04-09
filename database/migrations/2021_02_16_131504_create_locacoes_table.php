@@ -29,7 +29,6 @@ class CreateLocacoesTable extends Migration
             $table->foreign('cliente_id')->references('id')->on('clientes');
             $table->foreign('carro_id')->references('id')->on('carros');
         });
-
     }
 
     /**

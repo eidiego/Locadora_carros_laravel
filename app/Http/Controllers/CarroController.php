@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCarroRequest;
-use App\Http\Requests\UpdateCarroRequest;
 use App\Models\Carro;
+use Illuminate\Http\Request;
 
 class CarroController extends Controller
 {
@@ -31,10 +30,10 @@ class CarroController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCarroRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCarroRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -64,11 +63,11 @@ class CarroController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCarroRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Carro  $carro
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCarroRequest $request, Carro $carro)
+    public function update(Request $request, Carro $carro)
     {
         //
     }
